@@ -1,0 +1,39 @@
+// responsive
+@use "sass:map";
+
+$breakpoints: (
+
+  /*----------------------------
+    基本
+  ----------------------------*/
+  //スマホ縦向き
+  sp: 'screen and (orientation: portrait) and (max-width: 767px)',
+  //スマホ縦向き以外全て
+  pc: 'screen and (orientation: landscape) and (max-width: 767px), screen and (min-width: 768px)',
+
+  /*----------------------------
+    ピンポイント（上書き前提）
+  ----------------------------*/
+  //PC/タプレット縦向き 指定
+  verticalPC: 'screen and (orientation: portrait) and (min-width: 768px)',
+  //スマホ横向き 指定
+  horizontalSP: 'screen and (orientation: landscape) and (max-width: 767px)',
+  //でかいPC 指定
+  largePC: 'screen and (min-width: 1760px)',
+
+  /*----------------------------
+    縦か横か（画像絡みが多い）
+  ----------------------------*/
+  //タテ長
+  vertical: 'screen and (orientation: portrait)',
+  //横長
+  horizontal: 'screen and (orientation: landscape)',
+
+) !default;
+
+// @mixinの定義
+@mixin media($breakpoint) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

@@ -1,0 +1,11 @@
+@use "../global/" as g;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @include g.media(sp) {
+  }
+}

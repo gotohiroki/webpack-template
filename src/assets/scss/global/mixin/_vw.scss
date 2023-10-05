@@ -1,0 +1,11 @@
+@use "sass:math"; //math.divを使う上で必要
+$baseWidthSp: 375;
+$baseWidthPc: 1440;
+
+@function vwSp($pixelsVw) {
+  @return math.div($pixelsVw, $baseWidthSp) * 100vw;
+}
+
+@function vwPc($pixelsVw) {
+  @return math.div($pixelsVw, $baseWidthPc) * 100vw;
+}

@@ -1,0 +1,151 @@
+@use "../mixin/browser" as m;
+
+@font-face {
+  font-family: 'Geologica';
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Geologica/Geologica-Thin.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Geologica';
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Geologica/Geologica-ExtraLight.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Geologica';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Geologica/Geologica-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Geologica/Geologica-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Geologica';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Geologica/Geologica-Medium.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Geologica';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/Geologica/Geologica-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'YakuHanJP';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.eot");
+  src: url("/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff2") format('woff2'),
+  url("/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff") format('woff'),;
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/YakuHanJP/YakuHanJP-Regular.eot");
+  src: url("/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff2") format('woff2'),
+  url("/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff") format('woff'),;
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/YakuHanJP/YakuHanJP-Medium.eot");
+  src: url("/assets/fonts/YakuHanJP/YakuHanJP-Medium.woff2") format('woff2'),
+  url("/assets/fonts/YakuHanJP/YakuHanJP-Medium.woff") format('woff'),;
+}
+@font-face {
+  font-family: 'YakuHanJP';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/YakuHanJP/YakuHanJP-Bold.eot");
+  src: url("/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff2") format('woff2'),
+  url("/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff") format('woff'),;
+}
+
+
+// font-family
+$font-base: YakuHanJP, -apple-system, BlinkMacSystemFont, YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$font-min: YakuHanMPs,'Yu Mincho Pr6N M', "Yu Mincho", YuMincho, "Hiragino Mincho ProN", serif;
+$font-title-serif: 'Geologica', sans-serif;
+
+// font-weight
+$thin: 100;
+$extralight: 200;
+$regular: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// color
+$color-primary-text: #040000;
+$color-accent-text: #0650ba;
+$color-white-text: #fff;
+
+$color-primary-bg: #e5f5fd;
+$color-secondary-bg: #00bff2;
+$color-mypage-bg: #00a0e9;
+$color-black-bg: #000;
+$color-point-bg: #fff799;
+
+$color-primary-border: #555;
+$color-secondary-border: rgba(85, 85, 85, 0.15);
+$color-nega-border: rgba(255, 255, 255, 0.8);
+$color-gray-black: #444;
+
+$color-access: #e4007f;
+$color-network: #00a0e9;
+$color-cyber: #009e96;
+$color-software: #eb6100;
+$color-access-bg: #fce5f2;
+$color-network-bg: #d9f1fc;
+$color-cyber-bg: #d9f1ef;
+$color-software-bg: #fdefe5;
+
+// z-index
+$z-loading: 9999;
+$z-closemodal: 6000;
+$z-menuTrigger: 5000;
+$z-modal: 3000;
+$z-pageTitle: 1000;
+$z-navSP: 200;
+$z-header: 120;
+$z-navPC: 100;
+$z-line: 20;
+$z-icon: 10;
+$z-page: 1;
+// $z-frameIn: -1;
+$z-bg: -10;
+
+// easing
+$primary-easing :cubic-bezier(.4,0,.2,1) 0s;
+$opacity-easing : opacity .6s cubic-bezier(.18,.06,.23,1) .8s;
+
+// width
+$width-sm: 104rem;
+$width-md: 114rem;
+$width-lg: 124rem;
+$width-xl: 134rem;
+$width-xxl: 144rem;
+
+// height
+$height-header : 9rem;
+$height-header-sp : 11rem;

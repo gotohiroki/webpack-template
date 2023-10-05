@@ -1,0 +1,11 @@
+@mixin safari {
+  @at-root _::-webkit-full-page-media, _:future, :root & {
+    @content;
+  }
+}
+
+@mixin firefox {
+  @at-root _:lang(x)::-moz-placeholder, & {
+    @content;
+  }
+}

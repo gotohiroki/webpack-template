@@ -1,0 +1,10 @@
+@use "../global/" as g;
+
+.l-footer {
+  position: relative;
+  margin-top: -9rem;
+
+  @include g.media(sp) {
+    margin-top: -8rem;
+  }
+}

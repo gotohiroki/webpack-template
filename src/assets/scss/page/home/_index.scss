@@ -1,0 +1,20 @@
+@use "../../global/" as g;
+
+.p-home {
+  @include g.media(sp) {
+  }
+}
+
+.p-home__inner {
+  @include g.media(sp) {
+  }
+}
+
+.p-home__title {
+  font-size: 7.2rem;
+  font-weight: 700;
+
+  @include g.media(sp) {
+    font-size: 3rem;
+  }
+}

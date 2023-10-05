@@ -1,0 +1,37 @@
+doctype html
+html(lang="ja")
+
+  block metaTags
+    - var description = ''
+    - var keywords = ''
+    - var title = '';
+    - var url = '';
+    - var type = '';
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title}
+    meta(name='description' content=description)
+    meta(name='keywords' content=keywords)
+    link(rel='apple-touch-icon' sizes='152x152' href='/assets/images/common/')
+    link(rel='icon' type='image/png' sizes='16x16' href='https://??????????/favicon.ico')
+    link(rel='canonical' href=url)
+    meta(name='msapplication-TileColor' content='#ffffff')
+    meta(name='theme-color' content='#ffffff')
+    link(rel='mask-icon' href='' color='#ffffff')
+    meta(property='og:title' content=title)
+    meta(property='og:image' content='/assets/images/common/')
+    meta(property='og:description' content=description)
+    meta(property='og:type' content=type)
+    meta(property='og:url' content=url)
+    meta(name='twitter:card' content='summary_large_image')
+    
+    
+  body
+    block header
+      include _header.pug
+    block main
+    block footer
+      include _footer.pug

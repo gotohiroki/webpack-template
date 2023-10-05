@@ -1,0 +1,26 @@
+@use "../setting"as s;
+@use './responsive' as r;
+@use "sass:math"; //math.divを使う上で必要
+
+@mixin base-copy {
+  font-family: s.$font-base;
+  line-height: 2;
+  font-size: 1.6rem;
+  font-weight: s.$regular;
+  letter-spacing: 0;
+  font-feature-settings: unset;
+
+  @include r.media(sp) {
+    line-height: 2;
+    font-size: 2rem;
+  }
+}
+
+@mixin title-serif {
+  font-family: s.$font-title-serif;
+}
+
+.Geologica {
+  font-family: s.$font-title-serif;
+  font-weight: 500;
+}

@@ -1,0 +1,15 @@
+extends ../layout/_layout.pug
+
+block metaTags
+  - var description = ''
+  - var keywords = ''
+  - var title = ''
+  - var url = ''
+  - var type = ''
+
+block main
+  main.p-home
+    .p-home__inner 
+      h1.p-home__title Hello World
+      .image 
+        img.src(src=require("@/assets/images/common/sample.jpg"), alt="" width="1440" height="933")
